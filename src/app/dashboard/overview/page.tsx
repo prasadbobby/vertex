@@ -1,4 +1,4 @@
-import PageContainer from '@/components/layout/page-container';
+// src/app/dashboard/overview/page.tsx
 import HealthOverview from '@/features/overview/components/health-overview';
 
 export const metadata = {
@@ -7,14 +7,12 @@ export const metadata = {
 
 export default function OverviewPage() {
   return (
-    <PageContainer>
-      <div className='space-y-4'>
-        <h2 className='text-3xl font-bold tracking-tight'>Healthcare Dashboard</h2>
-        <p className='text-muted-foreground'>
-          Monitor and analyze your healthcare AI session activities
-        </p>
-        <HealthOverview />
-      </div>
-    </PageContainer>
+    <div className='space-y-4'>
+      <h2 className='text-3xl font-bold tracking-tight'>Healthcare Dashboard</h2>
+      <p className='text-muted-foreground'>
+        Monitor and analyze your healthcare AI session activities
+      </p>
+      <HealthOverview />
+    </div>
   );
 }
